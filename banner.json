@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-02-traffic-light",
+  "eyebrow": "PICOKIT // LESSON 02",
+  "title": "PICOKIT // TRAFFIC LIGHT",
+  "subtitle": "THREE PHASE SIGNAL + AUTHENTICATED HEARTBEAT",
+  "accent": "#FF00FF",
+  "dim": "#9E009E",
+  "white": "#F3D2FF",
+  "cyan": "#7FD8E0",
+  "bg": "#110011",
+  "bg_edge": "#050005",
+  "icon": "led",
+  "panel_status": "PHASE 1/3  ·  GREEN 3 s  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "LED",
+      "value": "GREEN"
+    },
+    {
+      "label": "PHASE",
+      "value": "1 / 3"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-34 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00002  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] phase 1  LED GREEN  onboard blink",
+    "[+] ack sent  rssi -34  snr 9.0"
+  ],
+  "categories": [
+    "SIGNAL",
+    "PHASE",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "PHASE-01",
+      "label": "red",
+      "value": "3 s"
+    },
+    {
+      "tag": "PHASE-02",
+      "label": "green",
+      "value": "3 s"
+    },
+    {
+      "tag": "PHASE-03",
+      "label": "yellow",
+      "value": "1 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ TRAFFIC LIGHT ]=="
+  ],
+  "layout": "split",
+  "stat": "GREEN"
+}
